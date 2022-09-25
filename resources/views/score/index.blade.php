@@ -25,7 +25,9 @@
     
     <div class="overflow-x-auto relative shadow-md sm:rounded-lg mt-6">
         <canvas id="canvas_barchart" height="280" width="600"></canvas>
+        <div class="mt-8">
         <canvas id="canvas_piechart" height="280" width="600"></canvas>
+        </div>
 
         <table class="w-full text-sm text-left text-gray-500 mt-6">
             <thead class="text-xs text-gray-700 uppercase bg-gray-50">
@@ -141,7 +143,7 @@
                 data: {
                     labels: Array.from(gradeMap.keys()),
                     datasets: [{
-                        label: 'Rata - Rata nilai',
+                        label: 'Grade Siswa',
                         data: Array.from(gradeMap.values()),
                         backgroundColor: [
                             'green',
